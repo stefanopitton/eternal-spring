@@ -1,7 +1,7 @@
 ---
 author: stepit
-title: 'Three months into my Earth Observation career switch: a check in'
-slug: three-months-into-my-earth-observation-career-switch-a-check-in
+title: 'Three months into my career switch to Earth Observation engineering: a check in'
+slug: three-months-into-my-career-switch-to-earth-observation-engineering-a-check-in
 created: 2026-08-01
 modified: 2026-08-02
 summary: A quick check in after the first three months of my career switch into Earth Observation.
