@@ -308,12 +308,13 @@ a {
 }
 
 img {
+  width: fit-content; /*if fit-content is on the img the caption is full-widht, if it is on the figure, than has only img width.*/
   max-width: 100%;
   max-height: 70vh;
   width: auto;
   height: auto;
   display: block;
-  margin: 0 auto var(--spacing-unit);
+  margin: var(--spacing-unit) auto var(--spacing-unit);
 }
 
 /* figure > img { */
@@ -323,9 +324,10 @@ img {
 
 /* Image with caption */
 figure:has(> img) {
-  width: fit-content;
   max-width: 100%;
   margin: 0 auto var(--spacing-unit);
+  border-bottom: var(--border-size) solid var(--color-grey);
+  border-top: var(--border-size) solid var(--color-grey);
 }
 
 figure:has(> img) img {
