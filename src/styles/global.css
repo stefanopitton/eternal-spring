@@ -381,10 +381,14 @@ figure[data-rehype-pretty-code-figure]:has(> [data-rehype-pretty-code-title])
 figcaption {
   width: 100%;
   font-size: 0.875rem;
-  font-style: italic;
+  font-style: normal;
   color: var(--color-dark-grey);
   padding: var(--spacing-quarter) 0;
   text-align: left;
+}
+
+figcaption .figure-label {
+  font-style: normal;
 }
 
 /* Table with caption (figure wrapper convention) */
