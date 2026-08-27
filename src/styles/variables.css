@@ -20,7 +20,7 @@
   --color-link-visited: var(--color-accent);
 
   /* Layout */
-  --content-max-width: 780px;
+  --content-max-width: 700px;
   --spacing-unit: 1rem;
   --spacing-half: calc(0.5 * var(--spacing-unit));
   --spacing-small: calc(0.3 * var(--spacing-unit));
