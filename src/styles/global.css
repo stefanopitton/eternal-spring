@@ -394,6 +394,24 @@ figure.table-figure > table {
   margin-bottom: 0;
 }
 
+/* Blockquotes */
+blockquote {
+  margin-bottom: var(--spacing-unit);
+  padding: var(--spacing-half) var(--spacing-unit);
+  border-left: 2px solid var(--color-accent);
+  color: var(--color-dark-grey);
+  font-style: italic;
+}
+
+blockquote p {
+  text-align: left;
+  margin-bottom: var(--spacing-half);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 ::selection {
   background: var(--color-lighter-cyan);
 }
