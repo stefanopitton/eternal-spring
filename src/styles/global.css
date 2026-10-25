@@ -212,23 +212,31 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: left;
 }
 
 .article-meta {
+  font-size: 0.8rem;
   display: block;
 }
 
 .article-summary {
   display: flex;
+  font-size: 1rem;
+  font-weight: 500;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   gap: var(--spacing-half);
-  color: var(--color-dark-grey);
 }
 
 .article-content {
   padding-bottom: calc(2 * var(--spacing-unit));
+}
+
+.article-meta-date {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-dark-grey);
 }
 
 .article-footer {
@@ -435,7 +443,8 @@ blockquote p:last-child {
 }
 
 code span {
-  line-height: 1.5;
+  font-size: 0.7rem;
+  line-height: 2;
 }
 
 pre {
@@ -536,8 +545,8 @@ code[data-line-numbers-max-digits="4"] > [data-line]::before {
   color: var(--color-grey);
   justify-content: center;
   gap: var(--spacing-half);
-  margin-top: var(--spacing-double);
-  margin-bottom: var(--spacing-double);
+  margin-top: var(--spacing-single);
+  margin-bottom: var(--spacing-single);
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -669,13 +678,7 @@ p:has(> .katex-display:only-child) > .katex-display {
     height: 100%;
   }
 
-  .logo-link {
-    flex: 0 0 auto;
-  }
-
   .navigation-list {
-    flex: 1;
-    justify-content: flex-end;
     gap: var(--spacing-unit);
     padding: 0;
   }

@@ -41,15 +41,9 @@ h2,
 h3,
 h4,
 h5,
-.post-link,
-.logo-link {
+.post-link {
   font-weight: 500;
   letter-spacing: 0.02em;
-}
-
-.logo-link {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
 }
 
 .principal-link {

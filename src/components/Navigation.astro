@@ -1,16 +1,10 @@
 ---
 import { NAV_LINKS } from "@/config";
 import NavigationLinks from "./NavigationLinks.astro";
-
-const [logo, ...links] = NAV_LINKS;
-const logoName = logo.name.toLocaleLowerCase().split(" ").join("-");
 ---
 
 <header>
   <nav class="navigation" aria-label="Blog navigation">
-    <a class="logo-link" href={logo.path}>
-      ~/.{logoName}
-    </a>
-    <NavigationLinks links={links} />
+    <NavigationLinks links={NAV_LINKS} />
   </nav>
 </header>
