@@ -5,7 +5,7 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
-import rehypeMermaid from "rehype-mermaid";
+import mermaid from "astro-mermaid";
 import { rehypeFigure } from "./src/plugins/rehype-figure.mjs";
 
 const prettyCodeOptions = {
@@ -30,7 +30,6 @@ export default defineConfig({
     syntaxHighlight: false,
     extendDefaultPlugins: true,
     rehypePlugins: [
-      [rehypeMermaid, { strategy: "inline-svg" }],
       rehypeKatex,
       rehypeFigure,
       [rehypePrettyCode, prettyCodeOptions],
@@ -40,5 +39,21 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
-  integrations: [mdx(), sitemap()],
+  integrations: [
+    mermaid({
+      theme: "neutral",
+      autoTheme: false,
+      mermaidConfig: {
+        // SVG labels avoid inheriting the justified paragraph style.
+        htmlLabels: false,
+        flowchart: { htmlLabels: false, curve: "basis" },
+        themeVariables: {
+          fontFamily: '"IBM Plex Serif", Georgia, serif',
+          fontSize: "15px",
+        },
+      },
+    }),
+    mdx(),
+    sitemap(),
+  ],
 });
