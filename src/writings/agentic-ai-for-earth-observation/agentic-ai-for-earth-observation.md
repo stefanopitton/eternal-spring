@@ -15,6 +15,8 @@ Personal notes from the three-day workshop *Agentic AI for Earth Observation*,
 organized by ESA Phi-lab and BIFOLD, with NASA, Ethereum Foundation, and Mistral
 among the participants.
 
+![Group Picture](./group-picture.jpeg "Agentic AI 4 Earth Observation group picture.")
+
 The main themes were:
 
 - **Trustworthiness**: how agentic systems can support decisions in Earth
